@@ -31,59 +31,48 @@
   -->
 <!-- The xml contains Qti specific resource strings neede for any value added features. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Call substate label -->
-  <!-- Call substate label for call resumed -->
-  <!-- Call substate label for call connected suspended (audio) -->
-  <!-- Call substate label for call connected suspended (video) -->
-  <!-- Call substate label for avp retry -->
-  <!-- Video quality changed message -->
-  <!-- Video quality High -->
-  <!-- Video quality Medium -->
-  <!-- Video quality Low -->
-  <!-- Video quality Unknown -->
-  <!-- Message indicating that Video Started flowing for IMS-VT calls -->
-  <!-- Message indicating that Video Stopped flowing for IMS-VT calls -->
-  <!-- Message indicating that camera failure has occurred for the selected camera and
-         as result camera is not ready -->
-  <!-- Message indicating that camera is ready/available -->
-  <!-- Message indicating unknown call session event -->
-  <!-- Message indicating data usage -->
-  <!-- In-call screen: Modify Call Options for IMS call -->
-  <!-- Modify call error cause -->
-  <!-- Description of the call transfer related strings [CHAR LIMIT=NONE] -->
-  <!-- Text for the onscreen "blind transfer" button -->
-  <!-- Text for the onscreen "assured transfer" button -->
-  <!-- Text for the onscreen "consultative transfer" button -->
-  <!-- Message indicating video calls not allowed if user enabled TTY Mode -->
-  <!-- Description of the deflect target in the Slide unlock screen. [CHAR LIMIT=NONE] -->
-  <!-- Message indicating call failed due to handover not feasible -->
-  <!-- Text for the onscreen "Add Participant" button -->
-  <!-- Title of the IMS to CS redial dialog -->
-  <!-- Message text of the IMS to CS redial dialog -->
-  <!-- Session modify cause unspecified -->
-  <!-- Session modify cause code upgrade local request -->
-  <!-- Session modify cause code upgrade remote request -->
-  <!-- Session modify cause code downgrade local request -->
-  <!-- Session modify cause code downgrade remote request -->
-  <!-- Session modify cause code downgrade rtp timeout -->
-  <!-- Session modify cause code downgrade qos -->
-  <!-- Session modify cause code downgrade packet loss -->
-  <!-- Session modify cause code downgrade low thrput -->
-  <!-- Session modify cause code downgrade thermal mitigation -->
-  <!-- Session modify cause code downgrade lipsync -->
-  <!-- Session modify cause code downgrade generic error -->
-  <!-- In-call screen: status label for an incoming conference call [CHAR LIMIT=25] -->
-  <!-- In-call screen: status label for an incoming video conference call [CHAR LIMIT=25] -->
-  <!-- The "label" of the in-call Notification for an incoming conference ringing call. [CHAR LIMIT=60] -->
-  <!-- Title displayed in the overlay for incoming conference calls which include the name of the provider.
-         [CHAR LIMIT=40] -->
-  <!-- Message indicating call failed due to low battery -->
-  <!-- VoWifi call quality indicators -->
-  <!-- Title for low battery alert dialogue -->
-  <!-- Message text of the low battery alert dialog in cases video call doesn't have downgrade capabilities -->
-  <!-- Message text of the low battery alert dialog for MO/MT video calls -->
-  <!-- No option of the low battery alert dialog for MO/MT Video calls -->
-  <!-- International prefix source-->
-  <!-- International prefix converted value-->
-  <!-- Pop up menu options for picture mode -->
+    <string name="call_substate_call_resumed">Gjenopptatt</string>
+    <string name="call_substate_connected_suspended_audio">Tilkoblet, men lyden er deaktivert</string>
+    <string name="call_substate_connected_suspended_video">Tilkoblet, men video er deaktivert</string>
+    <string name="call_substate_avp_retry">Sjekker videokvalitet\u2026</string>
+    <string name="video_quality_changed"><xliff:g id="id">%1$s</xliff:g>: Videokvalitet er endret til <xliff:g id="quality" example="high">%2$s</xliff:g></string>
+    <string name="video_quality_high">høy</string>
+    <string name="video_quality_medium">middels</string>
+    <string name="video_quality_low">lav</string>
+    <string name="video_quality_unknown">ukjent</string>
+    <string name="camera_not_ready">Kameraet er ikke klart</string>
+    <string name="camera_ready">Kameraet er klart</string>
+    <string name="wlan_data_usage_label">Wi-Fi databruk: <xliff:g id="usage">%1$s</xliff:g></string>
+    <string name="lte_data_usage_label">LTE databruk: <xliff:g id="usage">%1$s</xliff:g></string>
+    <string name="modify_call_option_title">Velg anropstype</string>
+    <string name="modify_call_option_vt">To-veis video</string>
+    <string name="modify_call_option_vt_tx">Videosending</string>
+    <string name="modify_call_option_vt_rx">Videomottak</string>
+    <string name="modify_call_option_voice">Kun stemme</string>
+    <string name="modify_call_failed_due_to_low_battery">Kan ikke endre samtalen på grunn av lavt batterinivå.</string>
+    <string name="onscreenAddParticipant">Legg til deltaker</string>
+    <string name="session_modify_cause_upgrade_local_request">Samtalen ble oppgradert på forespørsel fra bruker</string>
+    <string name="session_modify_cause_upgrade_remote_request">Samtalen ble oppgradert på forespørsel fra fjernbruker</string>
+    <string name="session_modify_cause_downgrade_local_request">Samtalen ble nedgradert på forespørsel fra bruker</string>
+    <string name="session_modify_cause_downgrade_remote_request">Samtalen ble nedgradert på forespørsel fra fjernbruker</string>
+    <string name="session_modify_cause_downgrade_rtp_timeout">Samtalen ble nedgradert på grunn av RTP-tidsavbrudd</string>
+    <string name="session_modify_cause_downgrade_qos">Samtalen ble nedgradert på grunn av tjenestekvalitet</string>
+    <string name="session_modify_cause_downgrade_packet_loss">Samtalen ble nedgradert på grunn av pakketap</string>
+    <string name="session_modify_cause_downgrade_low_thrput">Samtalen ble nedgradert på grunn av lav dataoverføringshastighet</string>
+    <string name="session_modify_cause_downgrade_thermal_mitigation">Samtalen ble nedgradert på grunn av overoppheting</string>
+    <string name="session_modify_cause_downgrade_lipsync">Samtalen ble nedgradert på grunn av leppesynkronisering</string>
+    <string name="session_modify_cause_downgrade_generic_error">Samtalen ble nedgradert på grunn av en generell feil</string>
+    <string name="card_title_incoming_conf_call">Innkommende samtalekonferanse</string>
+    <string name="card_title_incoming_video_conf_call">Innkommende videokonferanse</string>
+    <string name="notification_incoming_conf_call">Innkommende samtalekonferanse</string>
+    <string name="incoming_conf_via_template">Innkommende konferanse via <xliff:g id="provider_name">%s</xliff:g></string>
+    <string name="call_failed_due_to_low_battery">Oppringingen mislyktes på grunn av lavt batterinivå</string>
+    <string name="vowifi_call_quality_good">God talekvalitet</string>
+    <string name="vowifi_call_quality_fair">Grei talekvalitet</string>
+    <string name="vowifi_call_quality_poor">Dårlig talekvalitet</string>
+    <string name="low_battery">Lavt batterinivå</string>
+    <string name="low_battery_hangup_msg">Vil du legge på?</string>
+    <string name="low_battery_msg">Batterinivået er under 15%. Vil du fortsette med videosamtalen eller konvertere den til en stemmesamtale?</string>
+    <string name="low_battery_convert">Konverter</string>
+    <string name="video_call">Videoanrop</string>
 </resources>
